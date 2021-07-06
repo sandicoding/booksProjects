@@ -9,4 +9,8 @@ import org.springframework.data.repository.CrudRepository;
  * ''
  */
 public interface BookRepository extends CrudRepository<Book, Long> {
+
+    Book save(long id, Book book);
+
+    String delete(long id);
 }
